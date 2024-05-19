@@ -7,3 +7,9 @@ The project's goal is to create an autonomous robot that cleans trash in cities 
 ## 1. Introduction
 In the pursuit of innovative urban waste management solutions, our project introduces a semi-autonomous litter-cleaning robot. This robot integrates a Raspberry Pi and Arduino, utilizing their computational and control capabilities to navigate and interact within urban environments effectively. Central to its operation, the PiCamera module captures images of objects within range of the robotic arm, which is processed using the MobileNetV3 model to identify and classify objects as trash. Coupled with this advanced image recognition is the use of an ultrasonic sensor mounted on the Arduino, enabling the robot to detect objects within a range of 20 cm and trigger image capture. This sensor data is communicated to the Raspberry Pi via a
 robust serial connection, allowing for sophisticated decision-making processes.
+
+## 2. Objectives
+Our primary objectives as set forth by our project proposal were:
+● Integrate the Arduino and Raspberry Pi onto our mobile robot platform.
+● Implement full wireless control and communication of the robot.
+● Autonomously detect trash and trigger the deployment of the robot arm for trash pickup using the ultrasonic sensor.
