@@ -10,6 +10,7 @@ robust serial connection, allowing for sophisticated decision-making processes.
 
 ## 2. Objectives
 Our primary objectives as set forth by our project proposal were:
-● Integrate the Arduino and Raspberry Pi onto our mobile robot platform.
-● Implement full wireless control and communication of the robot.
-● Autonomously detect trash and trigger the deployment of the robot arm for trash pickup using the ultrasonic sensor.
+
+- Integrate the Arduino and Raspberry Pi onto our mobile robot platform.
+- Implement full wireless control and communication of the robot.
+- Autonomously detect trash and trigger the deployment of the robot arm for trash pickup using the ultrasonic sensor.
