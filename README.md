@@ -14,3 +14,40 @@ Our primary objectives as set forth by our project proposal were:
 - Integrate the Arduino and Raspberry Pi onto our mobile robot platform.
 - Implement full wireless control and communication of the robot.
 - Autonomously detect trash and trigger the deployment of the robot arm for trash pickup using the ultrasonic sensor.
+
+## 3. Methodology
+### 3.1 Main Features
+- Wireless Operation: Enable users to wirelessly command the robot via the Raspberry Pi for enhanced maneuverability and control.
+- Efficient Communication: Establish robust serial communication between Raspberry Pi and Arduino to transmit object detection notifications and classifications.
+- Sensor Optimization: Utilize ultrasonic sensors to detect objects within a 20 cm range regardless of orientation.
+- Object Recognition: Utilize the MobileNet model to reliably identify objects
+### 3.2 Circuit Diagram
+![image](https://github.com/RiVer2000/litter-bot/assets/64482413/2d5759d4-c49c-41ca-b5eb-8b1b084cc0d3)
+
+### 3.3 Object Detection and Recognition
+The robot is programmed to specifically recognize items commonly categorized as litter, such as paper cups. Once an object is identified as trash by the PiCam, i.e. the paper cup, and is within a
+20 cm range detected by an ultrasonic sensor, the system triggers the robotic arm to collect the
+item and deposit it into an onboard bin. Conversely, objects not recognized as trash are moved
+aside, allowing the robot to effectively manage waste by segregating and disposing of litter
+appropriately in urban environments. This integration of machine learning and robotics
+technology streamlines waste management processes, enhancing the robot's utility and efficiency.
+The MobileNetV2 model for real-time object detection was utilized via a Raspberry Pi equipped
+with a PiCamera. This advanced neural network is adept at identifying various objects within
+visual frames, allowing our autonomous litter-cleaning robot to detect and classify items
+effectively. By processing images captured when triggered by the ultrasonic sensor, the system
+can identify specific waste items such as paper cups.
+The software at a high level performs the following tasks. The RPi receives keyboard input
+through ssh via WiFi connection and forwards them directly to the Arduino. This allows the
+users to drive the robot and control each joint of the robotic arm and command it into some
+pre-saved positions such as “stowed” or “deployed”.
+The trash detection operates in a functional loop between the Arduino and Rpi. The Arduino first
+detects an object within range. In this case, we’ve defined that range to be 20 cm. It then stops
+reading any user input for driving or robotic arm control and sends a request to the RPi to capture
+an image and identify the object that was detected. The RPi will process the image and run it
+through the MobileNet model to identify the type of object that was detected. If the item is
+suitable for collection and classified as “trash”, a flag is sent to the Arduino to perform a series
+of actions to pick up the object and place it in the on-board bin. If the item is not classified as
+“trash”, a flag is sent to the Arduino to move the object to the side.
+
+
+
