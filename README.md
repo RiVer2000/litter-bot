@@ -49,7 +49,5 @@ suitable for collection and classified as “trash”, a flag is sent to the Ard
 of actions to pick up the object and place it in the on-board bin. If the item is not classified as
 “trash”, a flag is sent to the Arduino to move the object to the side.
 ## Results
-[![Watch the video](https://github.com/user-attachments/assets/f9cbbf7f-910a-40a0-9e87-45c634838020)
-](https://github.com/RiVer2000/litter-bot/blob/main/litter_bot_demo_video.mp4)
-
+[Link to Video](https://drive.google.com/file/d/15ecIa_8dybQiGQ9Cypal-q-Mdmb4FNyF/view?usp=sharing)
 
