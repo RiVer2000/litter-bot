@@ -1,5 +1,4 @@
 # Litterbot
-Class Project for ROB-GY 6103 Advanced Mechatronics 
 
 ## Abstract
 The project's goal is to create an autonomous robot that cleans trash in cities that is tailored to its needs. This mobile robot, which combines Arduino and Raspberry Pi, makes use of an Ultrasonic sensor that was moved from the Propeller platform. With the help of the Raspberry Pi, the robot can be wirelessly controlled by an operator. Its capacity to automatically identify and categorize waste utilizing an ultrasonic sensor system and a camera system is a crucial feature, since it allows a robotic arm to be autonomously activated for garbage collection. Efficient navigation and trash handling in intricate urban environments are made possible by the smooth data flow and control that serial connectivity between Arduino and Raspberry Pi provides.
