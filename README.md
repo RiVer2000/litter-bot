@@ -48,6 +48,7 @@ through the MobileNet model to identify the type of object that was detected. If
 suitable for collection and classified as “trash”, a flag is sent to the Arduino to perform a series
 of actions to pick up the object and place it in the on-board bin. If the item is not classified as
 “trash”, a flag is sent to the Arduino to move the object to the side.
-## Results
-[Link to Video](https://drive.google.com/file/d/15ecIa_8dybQiGQ9Cypal-q-Mdmb4FNyF/view?usp=sharing)
+
+<img width="462" height="457" alt="image" src="https://github.com/user-attachments/assets/dcacfc8a-6da0-4228-809f-88475cbd612e" />
+
 
